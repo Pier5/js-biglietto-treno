@@ -4,7 +4,7 @@ let kmPrice = 0.21;
 let totalPrice = kmPrice * km;
 let price = totalPrice;
 
-document.getElementById('my-output').innerHTML = totalPrice;
+document.getElementById('my-output').innerHTML = totalPrice.toFixed(2);
 
 if (age < 18) {
     price = totalPrice * 80 / 100;
