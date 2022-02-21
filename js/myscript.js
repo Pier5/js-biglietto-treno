@@ -4,15 +4,14 @@ let kmPrice = 0.21;
 let totalPrice = kmPrice * km;
 let price = totalPrice;
 
-document.getElementById('my-output').innerHTML = totalPrice.toFixed(2);
-
 if (age < 18) {
     price = totalPrice * 80 / 100;
-    document.getElementById('my-output').innerHTML = price.toFixed(2);
 } else if (age > 65) {
     price = totalPrice * 60 / 100;
-    document.getElementById('my-output').innerHTML = price.toFixed(2);
 }
+
+let Element = document.getElementById('my-output');
+Element.innerHTML = `Il prezzo del tuo biglietto è ${price.toFixed(2)}`;
 
 
 
